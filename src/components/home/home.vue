@@ -9,7 +9,7 @@
       <div class="content-container">
         <ul class="product">
           <li><span class="symbol">&gt;&gt;</span>个人介绍</li>
-          <li><span class="symbol">&gt;&gt;</span>作品</li>
+          <li @click="toProduct"><span class="symbol">&gt;&gt;</span>作品</li>
           <li><span class="symbol">&gt;&gt;</span>文章</li>
         </ul>
       </div>
@@ -37,6 +37,9 @@ export default {
     changeBackImg () {
       const random = Math.ceil(Math.random() * 4)
       this.$refs['backImg'].style.backgroundImage = "url('/static/img/" + random + ".jpg')"
+    },
+    toProduct () {
+      this.$router.push({path: '/product'})
     }
   }
 }
@@ -82,6 +85,7 @@ export default {
         text-align: center;
         border-bottom: 1px solid rgba(250, 250, 250, 0.5);
         padding-bottom: 10px;
+        cursor: pointer;
         h1{
           font-size: 20px;
           line-height: 25px;
