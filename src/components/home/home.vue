@@ -8,7 +8,7 @@
       </div>
       <div class="content-container">
         <ul class="product">
-          <li><span class="symbol">&gt;&gt;</span>个人介绍</li>
+          <li @click="toResume"><span class="symbol">&gt;&gt;</span>个人介绍</li>
           <li @click="toProduct"><span class="symbol">&gt;&gt;</span>作品</li>
           <li><span class="symbol">&gt;&gt;</span>文章</li>
         </ul>
@@ -40,6 +40,9 @@ export default {
     },
     toProduct () {
       this.$router.push({path: '/product'})
+    },
+    toResume () {
+      window.open('http://liangyonggang.cn/resume')
     }
   }
 }
