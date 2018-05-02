@@ -8,9 +8,21 @@
       </div>
       <div class="content-container">
         <ul class="product">
-          <li @click="toResume"><span class="symbol">&gt;&gt;</span>个人介绍</li>
-          <li @click="toProduct"><span class="symbol">&gt;&gt;</span>作品</li>
-          <li><span class="symbol">&gt;&gt;</span>文章</li>
+          <li>
+            <a href="http://liangyonggang.cn/resume" target="_blank">
+              <span class="symbol">&gt;&gt;</span>个人介绍
+            </a>
+          </li>
+          <li>
+            <a href="#/product" target="_blank">
+              <span class="symbol">&gt;&gt;</span>作品
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="symbol">&gt;&gt;</span>文章
+            </a>
+          </li>
         </ul>
       </div>
       <div class="content-footer">
@@ -37,12 +49,6 @@ export default {
     changeBackImg () {
       const random = Math.ceil(Math.random() * 4)
       this.$refs['backImg'].style.backgroundImage = "url('/static/img/" + random + ".jpg')"
-    },
-    toProduct () {
-      this.$router.push({path: '/product'})
-    },
-    toResume () {
-      window.open('http://liangyonggang.cn/resume')
     }
   }
 }
@@ -114,8 +120,14 @@ export default {
             cursor: pointer;
             &:hover{
               background: rgba(250, 250, 250, 0.9);
-              color: #333;
-              font-weight: bold;
+              a{
+                color: #333;
+                font-weight: bold;
+              }
+            }
+            a{
+              color: #fefefe;
+              text-decoration: none;
             }
             .symbol{
               font-size: 12px;
