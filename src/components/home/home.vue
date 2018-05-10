@@ -126,6 +126,8 @@ export default {
               }
             }
             a{
+              display: inline-block;
+              width: 100%;
               color: #fefefe;
               text-decoration: none;
             }
