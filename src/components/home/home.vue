@@ -2,7 +2,7 @@
   <div class="home">
     <div class="back-img" ref="backImg"></div>
     <div class="content">
-      <div class="content-head" @click="changeBackImg">
+      <div class="content-head">
         <h1>梁永刚的个人网站</h1>
         <p class="sub-title">claus.liang's website</p>
       </div>
@@ -43,7 +43,7 @@ export default {
     }
   },
   mounted () {
-    this.changeBackImg()
+    // this.changeBackImg()
   },
   methods: {
     changeBackImg () {
@@ -63,7 +63,7 @@ export default {
       width: 100%;
       top: 0;
       bottom: 0;
-      background-image: url("/static/img/1.jpg");
+      background-image: url("/static/img/3_new.jpg");
       background-repeat: no-repeat;
       background-size: cover;
       filter: blur(2px);
