@@ -9,7 +9,31 @@
             <div class="pro-title">仿饿了吗</div>
             <div class="pro-desc">该项目高仿饿了吗点餐软件，用vue框架搭建，亮点是添加了动画效果。</div>
             <div class="pro-bottom">
-              <span class="block vue">vue</span><span class="block phone">phone</span>
+              <span class="block vue">VUE</span><span class="block phone">PHONE</span>
+            </div>
+          </dd>
+        </dl>
+      </a>
+      <a href="http://liangyonggang.cn/bgm">
+        <dl class="pro-item">
+          <dt><img src="./img/bgm.jpg" alt=""></dt>
+          <dd>
+            <div class="pro-title">后台管理系统</div>
+            <div class="pro-desc">该项目使用了element UI库，实现了后台管理系统的一般功能。</div>
+            <div class="pro-bottom">
+              <span class="block vue">VUE</span><span class="block pc">PC</span>
+            </div>
+          </dd>
+        </dl>
+      </a>
+      <a href="http://liangyonggang.cn/news">
+        <dl class="pro-item">
+          <dt><img src="./img/news.jpg" alt=""></dt>
+          <dd>
+            <div class="pro-title">新闻网站</div>
+            <div class="pro-desc">该项目js框架采用了react，使用了react-responsive实现了适配pc端及移动端</div>
+            <div class="pro-bottom">
+              <span class="block react">REACT</span><span class="block pc">PC</span><span class="block phone">PHONE</span>
             </div>
           </dd>
         </dl>
@@ -77,12 +101,21 @@ export default {
               border-radius: 10px;
               font-size: 15px;
             }
+            /* 各标签样式 */
             .vue{
               background: #4fc08d;
               color: #fff;
             }
+            .react{
+              background: #61dafb;
+              color: #fff;
+            }
             .phone{
               background: rgb(216, 224, 232);
+              color: #fff;
+            }
+            .pc{
+              background: #555;
               color: #fff;
             }
           }
