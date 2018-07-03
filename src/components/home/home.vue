@@ -4,7 +4,7 @@
     <div class="content">
       <div class="content-head">
         <h1>梁永刚的个人网站</h1>
-        <p class="sub-title">claus.liang's website</p>
+        <p class="sub-title">klaus.liang's website</p>
       </div>
       <div class="content-container">
         <ul class="product">
