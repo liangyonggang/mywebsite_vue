@@ -38,6 +38,18 @@
           </dd>
         </dl>
       </a>
+      <a href="http://liangyonggang.cn/selectHouse">
+        <dl class="pro-item">
+          <dt><img src="./img/house.jpg" alt=""></dt>
+          <dd>
+            <div class="pro-title">抢房APP</div>
+            <div class="pro-desc">一款在线抢房的webAPP</div>
+            <div class="pro-bottom">
+              <span class="block vue">VUE</span><span class="block phone">PHONE</span>
+            </div>
+          </dd>
+        </dl>
+      </a>
     </div>
   </div>
 </template>
@@ -74,7 +86,7 @@ export default {
           }
         }
         dd{
-          float: 1;
+          flex: 1;
           margin-left: 20px;
           position: relative;
           .pro-title{
